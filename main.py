@@ -7,6 +7,8 @@ def print_fib():
     n = input("Номер элемента ряда Фибоначчи: ")
     n = int(n) - 2
 
+
+
     while n > 0:
         fib1, fib2 = fib2, fib1 + fib2
         n -= 1
