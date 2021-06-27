@@ -4,6 +4,10 @@
 def print_fib():
     fib1 = fib2 = 1
 
+
+
+
+
     n = input("Номер элемента ряда Фибоначчи: ")
     n = int(n) - 2
 
