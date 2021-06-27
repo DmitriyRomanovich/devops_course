@@ -1,14 +1,15 @@
 #!/bin/bash
+#fibonacci sequence function
+fib()
+{
+ind=$1
 
-function fib(){
-    if [ $1 -le 0 ]; then
-        echo 0
-    elif [ $1 -eq 1 ]; then
-        echo 1
-    else
-        echo $[`fib $[$1-2]` + `fib $[$1 - 1]` ]
-    fi
-
+if (( ind <= 0 ))
+ then echo 0
+elif (( ind == 2 ))
+ then echo 1
+else
+  echo $(( $(fib $((ind - 1)) ) + $(fib $((ind - 2)) ) )) 
+fi 
 }
-
-fib $1
+echo fibbonacci sequence number $1 is $(fib $1)
